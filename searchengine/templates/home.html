@@ -121,6 +121,35 @@
                 transform: scale(1.05);
             }
 
+            @media screen and (min-width: 10px) and (max-width: 500px) {
+                form{
+                    width: 80%;
+                    /* background: red; */
+                }
+                form img{
+                    width: 80%;
+                }
+                form .singleline{
+                    width: 100%;
+                }
+                form .singleline> input{
+                width: 85%;
+                }
+            
+                form .singleline> button{
+                    cursor: pointer;
+                    height: 100%;
+                    width: 15%;
+                    background: transparent;
+                    border: 0px;
+                }
+                form .singleline> button img{
+                    width: 60%;
+                }
+
+            }
+
+
         </style>
     </head>
     <body>
@@ -146,7 +175,7 @@
                 GetSetGo
             </div>
             <div class="themes">
-                W
+                L
             </div>
 
         </form>
@@ -159,13 +188,13 @@
                     document.documentElement.style.setProperty('--col1','#222831');
                     document.documentElement.style.setProperty('--col2','#DDDDDD');
                     document.getElementById("submit").src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png";
-                    
+                    document.querySelector('.themes').innerHTML = "D";
                 }
                 else{
                     document.documentElement.style.setProperty('--col1','#DDDDDD');
                     document.documentElement.style.setProperty('--col2','#222831');
                     document.getElementById("submit").src="https://img.icons8.com/ios/50/222831/search--v1.png";
-                    
+                    document.querySelector('.themes').innerHTML = "L";
                 }
 
             });
